@@ -11,3 +11,8 @@ provider "azurerm" {
     feature {}
     subscription_id = ""
 }
+
+resource "azurerm_resource_group" "repo" {
+    name = "repo-rg"
+    location = "East US"
+}
